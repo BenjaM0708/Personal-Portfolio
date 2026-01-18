@@ -47,11 +47,6 @@ section {
 img {
  border-radius: 4%;
  border: solid 2px aliceblue;
-}
-
-@media screen and (max-width: 871px) {
-  img {
-    width: 70%;
-    height: auto;
-  }
+ height: auto;
+ width: 60%;
 }
