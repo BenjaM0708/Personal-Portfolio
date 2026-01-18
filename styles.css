@@ -114,6 +114,26 @@ a:link {
   height: 860px;
 }
 
+/*Media Query for the Navbar*/
+
+@media (max-width: 500px) {
+
+.header {
+  justify-content: space-around;
+}
+
+.bar-link a {
+  font-size: 1rem;
+}
+
+.bar-link li {
+  display:block;
+}
+
+}
+
+/*End of Media Query for the Navbar*/
+
 #welcome-section {
   display: flex;
   flex-direction: column;
@@ -137,6 +157,19 @@ a:link {
   color: #d69c5a;
 }
 
+/*Media Query for the Welcom-section*/
+
+@media (max-width: 750px){
+ 
+#welcome-section h1, #welcome-section p {
+  font-size:1.8rem;
+}
+
+
+
+}
+
+/*End of Media Query for the Welcom-section*/
 .bigset-pro {
   background-color: #f4e9cd;
   height: 860px;
@@ -150,6 +183,7 @@ a:link {
   justify-content: center;
   width: 60%;
   height: 60px;
+  margin-top: 2rem;
 }
 
 .bigset-pro #pText {
@@ -159,7 +193,7 @@ a:link {
   font-style: normal;
   font-size: 30px;
   text-align: center;
-  padding-top: 10px;
+ 
 }
 
 .bigset-pro .bar {
@@ -215,28 +249,27 @@ a:link {
   gap: 2rem;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
 
   /*Porcion de Grilla Cambiada*/
   .bigset-pro {
-    height: auto;
+    height: 105rem;
   }
 
   #projects {
     grid-template-columns: 1fr;
     height: auto;
-    padding: 100px;
-    gap: 100px;
+    gap: 4rem;
   }
 
   .bigset-pro .project-tile {
-    height: 25rem;
+    height: 18rem;
     width: auto;
     margin: 0px;
   }
 
   .project-tile img {
-    height: 25rem;
+    height: 18rem;
     width: auto;
     z-index: 1;
   }
@@ -244,6 +277,26 @@ a:link {
   .bigset-pro .ti-proj {
     height: 50px;
     z-index: 2;
+  }
+
+  #pText {
+    margin-top: 2.5rem;
+  }
+
+}
+
+@media (max-width: 450px){
+
+.bigset-pro .project-tile, .project-tile img {
+  height: 15rem;
+}
+
+.bigset-pro {
+    height: 95rem;
+  }
+
+#pText {
+    margin-top: 1rem;
   }
 
 }
@@ -294,3 +347,26 @@ a:link {
   height: 35px;
   width: auto;
 }
+
+/*Media Query for the About*/
+
+@media (max-width: 810px) {
+
+#about h2 {
+  font-size: 3rem;
+}
+
+#about .link {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 16px;
+  padding: 1rem;
+}
+
+#about div {
+  margin: 1rem;
+}
+
+}
+
+/*End of Media Query for the About*/
